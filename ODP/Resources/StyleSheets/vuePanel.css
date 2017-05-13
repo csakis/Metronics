@@ -1,0 +1,18 @@
+.fade-enter-active,.fade-leave-active {
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in;
+	max-height: 500px;
+	overflow: hidden;
+	
+}
+
+.fade-enter,.fade-leave-active {
+	overflow: hidden;
+	max-height: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	transition-duration: 0.5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view
+  xmlns:xp="http://www.ibm.com/xsp/core"
+  xmlns:xc="http://www.ibm.com/xsp/custom">
+  <xp:div
+    styleClass="panel-group">
+    <!-- panel closing does not work very well yet -->
+    <!--
+      <xp:this.attrs> <xp:attr name="v-show" value="#{javascript:return 'is' + compositeData.panelTitle + 'Shown';}"> </xp:attr> </xp:this.attrs>
+    -->
+    <xp:div>
+      <xp:this.styleClass><![CDATA[#{javascript:var panelStyle = "panel ";
+//add color
+
+if (compositeData.panelColor.substr(0, 5) != "panel" ) { 
+	panelStyle += "border--" + compositeData.panelColor;
+}
+//add extra classes
+else { 
+	panelStyle += compositeData.panelColor;
+}
+panelStyle += (compositeData.extraClasses) ? " " + compositeData.extraClasses : "";
+
+return panelStyle.trim();}]]></xp:this.styleClass>
+      <xp:this.attrs>
+        <xp:attr
+          name=":class">
+          <xp:this.value><![CDATA[#{javascript:return "{'border--gray': !is" + compositeData.panelTitle + "Open}";}]]></xp:this.value>
+        </xp:attr>
+      </xp:this.attrs>
+      <xp:div
+        style="cursor: -webkit-grab; cursor: grab;">
+        <xp:this.attrs>
+          <xp:attr
+            name=":class">
+            <xp:this.value><![CDATA[#{javascript:return "{'bg-gray': !is" + compositeData.panelTitle + "Open}";}]]></xp:this.value>
+          </xp:attr>
+        </xp:this.attrs>
+        <xp:this.styleClass><![CDATA[#{javascript:var headingStyle = "panel-heading ";
+headingStyle += (compositeData.panelColor === "blue") ? "bg-blue white": "";
+headingStyle += (compositeData.panelColor === "navy") ? "bg-navy white": "";
+headingStyle += (compositeData.panelColor === "aqua") ? "bg-aqua white": "";
+headingStyle += (compositeData.panelColor === "teal") ? "bg-teal white": "";
+headingStyle += (compositeData.panelColor === "olive") ? "bg-olive white": "";
+headingStyle += (compositeData.panelColor === "green") ? "bg-green white": "";
+headingStyle += (compositeData.panelColor === "lime") ? "bg-lime white": "";
+headingStyle += (compositeData.panelColor === "yellow") ? "bg-yellow black": "";
+headingStyle += (compositeData.panelColor === "orange") ? "bg-orange white": "";
+headingStyle += (compositeData.panelColor === "red") ? "bg-red white": "";
+headingStyle += (compositeData.panelColor === "maroon") ? "bg-maroon white": "";
+headingStyle += (compositeData.panelColor === "fuchsia") ? "bg-fuchsia white": "";
+headingStyle += (compositeData.panelColor === "purple") ? "bg-purple white": "";
+headingStyle += (compositeData.panelColor === "black") ? "bg-black white": "";
+headingStyle += (compositeData.panelColor === "gray") ? "bg-gray white": "";
+headingStyle += (compositeData.panelColor === "silver") ? "bg-silver black": "";
+
+return headingStyle;}]]></xp:this.styleClass>
+        <xp:div
+          styleClass="h6 panel-title">
+          <!--
+            Panel closing <xc:i attr1name=":class" attr2name="@click" extraClasses="pull-right mdi mdi-close-circle"> <xc:this.attr2value><![CDATA[#{javascript:var chatTitle =
+            'is' + compositeData.panelTitle + 'Shown'; return chatTitle + " =! " + chatTitle;}]]></xc:this.attr2value> </xc:i>
+          -->
+
+          <xc:i
+            attr1name=":class"
+            attr2name="@click"
+            extraClasses="panelCollapseIcon pull-right">
+            <xc:this.attr1value><![CDATA[#{javascript:var chatTitle = 'is' + compositeData.panelTitle + 'Open';
+return "[" + chatTitle + " ? 'mdi mdi-arrow-down-drop-circle-outline': 'mdi mdi-minus-circle']";}]]></xc:this.attr1value>
+
+            <xc:this.attr2value><![CDATA[#{javascript:var chatTitle = 'is' + compositeData.panelTitle + 'Open';
+return chatTitle + " =! " + chatTitle;}]]></xc:this.attr2value>
+          </xc:i>
+
+          <xp:text
+            value="#{javascript:return compositeData.panelTitle;}"
+            escape="false">
+          </xp:text>
+        </xp:div><!-- panelTitle -->
+      </xp:div><!-- panelHeading -->
+      <xp:panel
+        tagName="transition">
+        <xp:this.attrs>
+
+          <xp:attr
+            name="enter-class"
+            value="slideOutUp">
+          </xp:attr>
+
+
+          <xp:attr
+            name="leave-class"
+            value="slideInDown">
+          </xp:attr>
+          <xp:attr
+            name="name"
+            value="custom-classes-transition">
+          </xp:attr>
+           </xp:this.attrs>
+        <xp:div
+          styleClass="panel-collapse collapse in"
+          id="panelCollapse">
+          <xp:this.attrs>
+            <!--
+              <xp:attr name=":class"> <xp:this.value><![CDATA[#{javascript:return "{in: is" + compositeData.panelTitle + "Open}";}]]></xp:this.value> </xp:attr>
+            -->
+            <xp:attr name="v-show">
+              <xp:this.value><![CDATA[#{javascript:return "is" + compositeData.panelTitle + "Open";}]]></xp:this.value>
+            </xp:attr>
+            <xp:attr
+              name="mode"
+              value="out-in">
+            </xp:attr>
+          </xp:this.attrs>
+
+
+          <xp:div styleClass="panel-body">
+            <xp:callback></xp:callback>
+          </xp:div>
+          <!-- panelBody -->
+
+        </xp:div><!-- panelCollapse -->
+    </xp:panel>
+
+  </xp:div>  <!-- panel -->
+</xp:div>
+  <!-- panelGroup -->
+
+</xp:view>

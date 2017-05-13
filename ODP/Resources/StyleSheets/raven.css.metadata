@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.8" replicaid="8725811F001149F6" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="4be" sequence="10" unid="7F8B39A6894445268725807D00724E95">
+<created><datetime>20161202T134832,21-07</datetime></created>
+<modified><datetime dst="true">20170512T210855,18-06</datetime></modified>
+<revised><datetime>20161208T132912,95-07</datetime></revised>
+<lastaccessed><datetime dst="true">20170512T210855,17-06</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20170512T210855,17-06</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=admin admin/O=lanl</name></updatedby>
+<wassignedby><name>CN=admin admin/O=lanl</name></wassignedby>
+<item name="$TITLE" sign="true"><text>raven.css</text></item>
+<item name="$MimeCharSet"><text>UTF-8</text></item>
+<item name="$FileModDT" sign="true"><datetime>20161208T132858,09-07</datetime></item>
+<item name="$Flags"><text>=34QC</text></item>
+<item name="$FlagsExt" sign="true"><text>D</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+
+<item name="$FileNames" sign="true"><text>raven.css</text></item></note>

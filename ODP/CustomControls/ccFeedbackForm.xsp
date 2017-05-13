@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view
+  xmlns:xp="http://www.ibm.com/xsp/core"
+  xmlns:xc="http://www.ibm.com/xsp/custom">
+  <xp:div
+    styleClass="modal-dialog"
+    role="document">
+    <xp:div
+      styleClass="modal-content">
+      <xp:div
+        styleClass="modal-header">
+        <xp:button
+          styleClass="close">
+          <xp:this.attrs>
+            <xp:attr
+              name="data-dismiss"
+              value="modal"></xp:attr>
+            <xp:attr
+              name="aria-label"
+              value="close"></xp:attr>
+          </xp:this.attrs>
+          <xc:i
+            extraClasses="fa fa-close"></xc:i>
+        </xp:button>
+        <xc:vue
+          tagName="h3"
+          extraClasses="modal-title">
+          Feedback form
+        </xc:vue>
+      </xp:div><!-- modal header -->
+      <xp:div
+        styleClass="modal-body">
+        <xp:label
+          value="Feedback Type"
+          for="feedbackType"
+          styleClass="control-label"></xp:label>
+        <xp:div
+          styleClass="form-group text-center"
+          id="feedbackType">
+          <xp:label
+            value=""
+            styleClass="radio-inline">
+            <xc:input
+              attr1name="type"
+              attr1value="radio"
+              attr2name="value"
+              attr2value="general"
+              attr3name="name"
+              attr3value="feedbackType"
+              attr4name="v-model"
+              attr4value="feedback.type"
+              attr5value=" ">
+            </xc:input>
+            <xp:span>General Feedback</xp:span>
+          </xp:label>
+          <xp:label
+            value=""
+            styleClass="radio-inline">
+            <xc:input
+              attr1name="type"
+              attr1value="radio"
+              attr2name="value"
+              attr2value="bug"
+              attr3name="name"
+              attr3value="feedbackType"
+              attr4name="v-model"
+              attr4value="feedback.type">
+            </xc:input>
+            <xp:span>Bug Report</xp:span>
+          </xp:label>
+          <xp:label
+            value=""
+            styleClass="radio-inline">
+            <xc:input
+              attr1name="type"
+              attr1value="radio"
+              attr2name="value"
+              attr2value="feature"
+              attr3name="name"
+              attr3value="feedbackType"
+              attr4name="v-model"
+              attr4value="feedback.type">
+            </xc:input>
+            <xp:span>Feature Request</xp:span>
+          </xp:label>
+        </xp:div><!-- form-group -->
+        <xp:div
+          styleClass="form-group">
+          <xp:label
+            value="Feedback Message"
+            styleClass="control-label"
+            for="feedbackContent"></xp:label>
+
+          <xp:br></xp:br>
+          <xp:inputTextarea
+            id="feedbackContent"
+            cols="75"
+            rows="10">
+            <xp:this.attrs>
+              <xp:attr
+                name="v-model"
+                value="feedback.message"></xp:attr>
+            </xp:this.attrs>
+          </xp:inputTextarea>
+        </xp:div><!-- form-group -->
+        <xp:div
+          styleClass="modal-footer">
+          <xp:button
+            value="Cancel"
+            styleClass="btn-default">
+            <xp:this.attrs>
+              <xp:attr
+                name="data-dismiss"
+                value="modal"></xp:attr>
+            </xp:this.attrs>
+          </xp:button>
+          <xp:button
+            value="Submit"
+            styleClass="btn-success">
+            <xp:this.attrs>
+              <xp:attr
+                name="@click"
+                value="sendFeedback"></xp:attr>
+              <xp:attr
+                name="data-dismiss"
+                value="modal"></xp:attr>
+            </xp:this.attrs>
+          </xp:button>
+        </xp:div><!-- modal footer -->
+      </xp:div> <!-- modal-body -->
+    </xp:div><!-- modal content -->
+  </xp:div><!-- modal-dialog -->
+
+
+</xp:view>
