@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
-
-</xp:view>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
+	<xp:br></xp:br>
+	<xc:vue tagName="h2" attr1name="style">Open Sans
+		<xc:this.attr1value><![CDATA[font-family:"Open Sans"]]></xc:this.attr1value>
+	</xc:vue>
+	<xc:vue tagName="h2" attr1name="style">Roboto
+		<xc:this.attr1value><![CDATA[font-family:"Roboto"]]></xc:this.attr1value>
+	</xc:vue>
+	<xc:ccBsIcon iconFixedWidth="false" iconSpinning="false"
+		iconName="gear" iconColor="text-primary" iconSize="fa-4x">
+	</xc:ccBsIcon>
+	<xc:mdiIcon iconName="cog"></xc:mdiIcon></xp:view>
