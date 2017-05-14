@@ -7,11 +7,17 @@
 		value="loadDefaultStylesIntoHead(); //in clientutils.js">
 	</xp:scriptBlock>
 	<xp:this.resources>
-		<xp:script src="/clientutils.js" clientSide="true"></xp:script>
+	  <xp:script src="/clientutils.js" clientSide="true"></xp:script>
+
 	</xp:this.resources>
 	<xp:div styleClass="page-wrapper">
 		<xc:ccNavBar></xc:ccNavBar>
+		<xp:div styleClass="clearfix"></xp:div>
+		<xp:div styleClass="page-container">
+		  <xc:ccSideBar></xc:ccSideBar>
+		</xp:div> <!-- page-container -->
+
 	</xp:div>
 	<!-- page-wrapper -->
-
+	<xc:CSJS></xc:CSJS>
 </xp:view>

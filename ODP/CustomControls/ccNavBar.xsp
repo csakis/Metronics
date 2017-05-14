@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
+  <xp:this.resources>
+    <xp:script src="/utilSSJS.jss" clientSide="false"></xp:script>
+  </xp:this.resources>
   <xp:div styleClass="page-header navbar navbar-fixed-top">
     <xp:div styleClass="page-header-inner">
       <xp:div styleClass="page-logo">
         <xp:link escape="true" value="index.xsp" styleClass="logo-default">
-          <xp:image id="image1" alt="logo" url="assets/layouts/layout/img/logo.png">
-          </xp:image>
+          <xp:image id="image1" alt="logo" url="assets/layouts/layout/img/logo.png"></xp:image>
         </xp:link>
         <xp:div styleClass="menu-toggler sidebar-toggler">
           <xp:label value=""></xp:label>
@@ -55,8 +57,7 @@
 
             <xc:ul extraClasses="dropdown-menu extended tasks">
 
-              <xc:li extraClasses="external">
-              </xc:li>
+              <xc:li extraClasses="external"></xc:li>
               <!-- This is where all the tasks come -->
 
               <xc:li>1</xc:li>
@@ -67,18 +68,18 @@
 
           <!-- user dropdown begin  -->
           <xc:li extraClasses="dropdown dropdown-user">
-            <xp:link escape="true" text="">
+            <xp:link escape="true" text="" styleClass="dropdown-toggle">
               <xp:this.attrs>
                 <xp:attr name="data-toggle" value="dropdown"></xp:attr>
                 <xp:attr name="data-hover" value="dropdown"></xp:attr>
                 <xp:attr name="data-close-others" value="true"></xp:attr>
               </xp:this.attrs>
-              <xp:label value="#{javascript:@UserName()}" styleClass="username username-hide-on-mobile"></xp:label>
+              <xp:label value="#{javascript:middle(@UserName(), '=', '/')}" styleClass="username username-hide-on-mobile"></xp:label>
               <xc:i extraClasses="fa fa-angle-down"></xc:i>
             </xp:link>
             <xc:ul extraClasses="dropdown-menu dropdown-menu-default">
               <xc:li>User details</xc:li>
-            </xc:ul> <!-- dropdown end -->
+            </xc:ul><!-- dropdown end -->
           </xc:li><!-- user dropdown end -->
         </xc:ul><!-- nav navbar -->
       </xp:div><!-- top-menu -->
