@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<note xmlns="http://www.lotus.com/dxl" class="filter">
+  <item name="$TITLE" sign="true">
+    <text>clientutils</text>
+  </item>
+  <item name="$Flags">
+    <text>h534Q</text>
+  </item>
+  <item name="$PublicAccess" sign="true">
+    <text>1</text>
+  </item>
+  <item name="$Comment">
+    <text>util functions for client-side JS</text>
+  </item>
+</note>
