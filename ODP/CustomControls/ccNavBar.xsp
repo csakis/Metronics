@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
+  <xp:div styleClass="page-header navbar navbar-fixed-top">
+    <xp:div styleClass="page-header-inner">
+      <xp:div styleClass="page-logo">
+        <xp:link escape="true" value="index.xsp" styleClass="logo-default">
+          <xp:image id="image1" alt="logo" url="assets/layouts/layout/img/logo.png">
+          </xp:image>
+        </xp:link>
+         <xp:div styleClass="menu-toggler sidebar-toggler">
+        <xp:label value=""></xp:label>
+      </xp:div><!-- menu-toggler -->
+      </xp:div><!-- page-logo -->
+     
+      <xp:div styleClass="top-menu">
+        <xc:ul extraClasses="nav navbar-nav pull-right">
+          <!-- BEGIN NOTIFICATION DROPDOWN -->
+          <!-- DOC: Apply "dropdown-dark" class after "dropdown-extended" to change the dropdown styte -->
+          <!--
+            DOC: Apply "dropdown-hoverable" class after below "dropdown" and remove data-toggle="dropdown" data-hover="dropdown" data-close-others="true" attributes to enable hover
+            dropdown mode
+          -->
+          <!-- DOC: Remove "dropdown-hoverable" and add data-toggle="dropdown" data-hover="dropdown" data-close-others="true" attributes to the below A element with dropdown-toggle class -->
+          <xc:li extraClasses="dropdown dropdown-extended dropdown-notification" attr1name="id" attr1value="header_notification_bar">
+            <xp:link escape="true" text="" styleClass="dropdown-toggle">
+              <xp:this.attrs>
+                <xp:attr name="data-toggle" value="dropdown"></xp:attr>
+                <xp:attr name="data-hover" value="dropdown"></xp:attr>
+                <xp:attr name="data-close-others" value="true"></xp:attr>
+              </xp:this.attrs>
+              <xc:i extraClasses="icon-bell"></xc:i>
+              <xp:label value="5" styleClass="badge badge-default"></xp:label>
+            </xp:link>
+            <xc:ul extraClasses="dropdown-menu">
+
+
+              <xc:li extraClasses="external"></xc:li><!-- external -->
+            </xc:ul><!-- dropdown-menu -->
+          </xc:li><!-- dropdown -->
+        </xc:ul><!-- nav navbar -->
+      </xp:div><!-- top-menu -->
+    </xp:div><!--page-header-inner -->
+  </xp:div>
+  <!-- page-header -->
+</xp:view>
