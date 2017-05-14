@@ -7,11 +7,11 @@
           <xp:image id="image1" alt="logo" url="assets/layouts/layout/img/logo.png">
           </xp:image>
         </xp:link>
-         <xp:div styleClass="menu-toggler sidebar-toggler">
-        <xp:label value=""></xp:label>
-      </xp:div><!-- menu-toggler -->
+        <xp:div styleClass="menu-toggler sidebar-toggler">
+          <xp:label value=""></xp:label>
+        </xp:div><!-- menu-toggler -->
       </xp:div><!-- page-logo -->
-     
+
       <xp:div styleClass="top-menu">
         <xc:ul extraClasses="nav navbar-nav pull-right">
           <!-- BEGIN NOTIFICATION DROPDOWN -->
@@ -32,11 +32,54 @@
               <xp:label value="5" styleClass="badge badge-default"></xp:label>
             </xp:link>
             <xc:ul extraClasses="dropdown-menu">
-
-
               <xc:li extraClasses="external"></xc:li><!-- external -->
+              <!-- this where all the notifications come -->
+              <xc:li>1</xc:li>
+              <xc:li>2</xc:li>
+              <xc:li>3</xc:li>
             </xc:ul><!-- dropdown-menu -->
-          </xc:li><!-- dropdown -->
+          </xc:li><!--notificiation dropdown end -->
+
+          <!-- TO DO dropdown begin-->
+          <xc:li extraClasses="dropdown dropdown-extended dropdown-tasks" attr1name="id" attr1value="header_task_bar">
+
+            <xp:link escape="true" text="" styleClass="dropdown-toggle">
+              <xp:this.attrs>
+                <xp:attr name="data-toggle" value="dropdown"></xp:attr>
+                <xp:attr name="data-hover" value="dropdown"></xp:attr>
+                <xp:attr name="data-close-others" value="true"></xp:attr>
+              </xp:this.attrs>
+              <xc:i extraClasses="icon-calendar"></xc:i>
+              <xp:label value="3" styleClass="badge badge-default"></xp:label>
+            </xp:link>
+
+            <xc:ul extraClasses="dropdown-menu extended tasks">
+
+              <xc:li extraClasses="external">
+              </xc:li>
+              <!-- This is where all the tasks come -->
+
+              <xc:li>1</xc:li>
+              <xc:li>2</xc:li>
+              <xc:li>3</xc:li>
+            </xc:ul>
+          </xc:li><!-- TODO end -->
+
+          <!-- user dropdown begin  -->
+          <xc:li extraClasses="dropdown dropdown-user">
+            <xp:link escape="true" text="">
+              <xp:this.attrs>
+                <xp:attr name="data-toggle" value="dropdown"></xp:attr>
+                <xp:attr name="data-hover" value="dropdown"></xp:attr>
+                <xp:attr name="data-close-others" value="true"></xp:attr>
+              </xp:this.attrs>
+              <xp:label value="#{javascript:@UserName()}" styleClass="username username-hide-on-mobile"></xp:label>
+              <xc:i extraClasses="fa fa-angle-down"></xc:i>
+            </xp:link>
+            <xc:ul extraClasses="dropdown-menu dropdown-menu-default">
+              <xc:li>User details</xc:li>
+            </xc:ul> <!-- dropdown end -->
+          </xc:li><!-- user dropdown end -->
         </xc:ul><!-- nav navbar -->
       </xp:div><!-- top-menu -->
     </xp:div><!--page-header-inner -->
