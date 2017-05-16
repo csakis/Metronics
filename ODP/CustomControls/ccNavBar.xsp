@@ -83,7 +83,7 @@
               <xc:i extraClasses="fa fa-angle-down"></xc:i>
             </xp:link>
             <xc:ul extraClasses="dropdown-menu dropdown-menu-default">
-              <xc:li>User details</xc:li>
+              <xc:li> <xc:ccThemePanel></xc:ccThemePanel></xc:li>
             </xc:ul><!-- dropdown end -->
           </xc:li><!-- user dropdown end -->
         </xc:ul><!-- nav navbar -->

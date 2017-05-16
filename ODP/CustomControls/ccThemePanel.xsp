@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
+  <xp:div styleClass="theme-panel hidden-xs hidden-sm">
+    <xp:div styleClass="toggler"></xp:div>
+    <xp:div styleClass="toggler-close"></xp:div>
+    <xp:div styleClass="theme-options">
+      <xp:div styleClass="theme-option theme-colors clearfix">
+        <xp:span>THEME COLOR</xp:span>
+        <xc:ul>
+          <xc:li extraClasses="color-default current tooltips" attr1name="data-style" attr1value="default" attr2name="data-container" attr2value="body" attr3name="data-original-title"
+            attr3value="Default">
+          </xc:li>
+          <xc:li extraClasses="color-darkblue tooltips" attr1name="data-style" attr1value="darkblue" attr2name="data-container" attr2value="body" attr3name="data-original-title" attr3value="Dark blue">
+          </xc:li>
+          <xc:li extraClasses="color-blue tooltips" attr1name="data-style" attr1value="blue" attr2name="data-container" attr2value="body" attr3name="data-original-title" attr3value="Blue">
+          </xc:li>
+          <xc:li extraClasses="color-grey tooltips" attr1name="data-style" attr1value="grey" attr2name="data-container" attr2value="body" attr3name="data-original-title" attr3value="Grey">
+          </xc:li>
+          <xc:li extraClasses="color-light tooltips" attr1name="data-style" attr1value="light" attr2name="data-container" attr2value="body" attr3name="data-original-title" attr3value="Light">
+          </xc:li>
+          <xc:li extraClasses="color-light2 tooltips" attr1name="data-style" attr1value="light2" attr2name="data-container" attr2value="body" attr3name="data-original-title" attr3value="Light 2">
+          </xc:li>
+        </xc:ul>
+      </xp:div><!-- theme option -->
+
+      <xp:div styleClass="theme-option">
+        <xp:span>Layout</xp:span>
+        <xp:comboBox styleClass="layout-option input-sm" defaultValue="fluid">
+          <xp:selectItem itemLabel="Fluid" itemValue="fluid">
+          </xp:selectItem>
+          <xp:selectItem itemLabel="Boxed" itemValue="boxed"></xp:selectItem>
+        </xp:comboBox>
+      </xp:div><!-- theme option -->
+
+      <xp:div styleClass="theme-option">
+        <xp:span>Header</xp:span>
+        <xp:comboBox styleClass="layout-option input-sm" defaultValue="fixed">
+          <xp:selectItem itemLabel="Fixed" itemValue="fixed"></xp:selectItem>
+          <xp:selectItem itemLabel="default" itemValue="default"></xp:selectItem>
+        </xp:comboBox>
+      </xp:div><!-- theme option -->
+
+      <xp:div styleClass="theme-option">
+        <xp:span>Top Menu Dropdown </xp:span>
+        <xp:comboBox styleClass="layout-option input-sm" defaultValue="dark">
+          <xp:selectItem itemLabel="Light" itemValue="light"></xp:selectItem>
+          <xp:selectItem itemLabel="Dark" itemValue="dark"></xp:selectItem>
+        </xp:comboBox>
+      </xp:div><!-- theme option -->
+
+      <xp:div styleClass="theme-option">
+        <xp:span>Sidebar Mode</xp:span>
+        <xp:comboBox styleClass="layout-option input-sm" defaultValue="fixed">
+          <xp:selectItem itemLabel="Fixed" itemValue="fixed"></xp:selectItem>
+          <xp:selectItem itemLabel="Default" itemValue="default"></xp:selectItem>
+        </xp:comboBox>
+      </xp:div><!-- theme option -->
+
+      <xp:div styleClass="theme-option">
+        <xp:span>Sidebar Menu</xp:span>
+        <xp:comboBox styleClass="layout-option input-sm" defaultValue="accordion">
+          <xp:selectItem itemLabel="Accordion" itemValue="accordion"></xp:selectItem>
+          <xp:selectItem itemLabel="Hover" itemValue="hover"></xp:selectItem>
+        </xp:comboBox>
+      </xp:div><!-- theme option -->
+      
+      <xp:div styleClass="theme-option">
+        <xp:span>Sidebar Style</xp:span>
+        <xp:comboBox styleClass="layout-option input-sm" defaultValue="accordion">
+          <xp:selectItem itemLabel="Accordion" itemValue="accordion"></xp:selectItem>
+          <xp:selectItem itemLabel="Hover" itemValue="hover"></xp:selectItem>
+        </xp:comboBox>
+      </xp:div><!-- theme option -->
+      
+      <xp:div styleClass="theme-option">
+        <xp:span>Sidebar Position</xp:span>
+        <xp:comboBox styleClass="layout-option input-sm" defaultValue="left">
+          <xp:selectItem itemLabel="Left" itemValue="left"></xp:selectItem>
+          <xp:selectItem itemLabel="Right" itemValue="right"></xp:selectItem>
+        </xp:comboBox>
+      </xp:div><!-- theme option -->
+      
+      <xp:div styleClass="theme-option">
+        <xp:span>Footer</xp:span>
+        <xp:comboBox styleClass="layout-option input-sm" defaultValue="fixed">
+          <xp:selectItem itemLabel="Fixed" itemValue="fixed"></xp:selectItem>
+          <xp:selectItem itemLabel="Default" itemValue="default"></xp:selectItem>
+        </xp:comboBox>
+      </xp:div><!-- theme option -->
+
+    </xp:div><!-- theme-options -->
+  </xp:div><!-- theme-panel -->
+</xp:view>
