@@ -7,8 +7,7 @@
       <!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
       <!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
       <!--
-        DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub
-        menu mode
+        DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode
       -->
       <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
       <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
@@ -22,18 +21,58 @@
           </xp:div>
         </xc:li> <!-- sidebar-toggler-wrapper -->
         <xc:li extraClasses="nav-item start">
-          <xc:a extraClasses="nav-link nav-toggle" attr1name="href" attr1value="#">
+          <xc:a extraClasses="nav-link nav-toggle" attr1name="href" attr1value="javascript:;">
             <xc:i extraClasses="icon-home"></xc:i>
             <xp:label value="Menu 1" styleClass="title"></xp:label>
             <xp:label value="" styleClass="arrow"></xp:label>
           </xc:a>
-          <xc:ul>
+          <xc:ul extraClasses="sub-menu">
             <xc:li extraClasses="nav-item start">
               <xc:a extraClasses="nav-link" attr1name="href" attr1value="index.xsp">
+                <xc:i extraClasses="icon-diamond"></xc:i>
                 <xp:label value="Index" styleClass="title"></xp:label>
               </xc:a>
             </xc:li>
-          </xc:ul> <!-- sub-menu -->
+            <xc:li extraClasses="nav-item start">
+              <xc:a extraClasses="nav-link" attr1name="href" attr1value="index.xsp">
+                <xc:i extraClasses="icon-handbag"></xc:i>
+                <xp:label value="Index 2" styleClass="title"></xp:label>
+              </xc:a>
+            </xc:li>
+            <xc:li extraClasses="nav-item start">
+              <xc:a extraClasses="nav-link" attr1name="href" attr1value="index.xsp">
+                <xc:i extraClasses="icon-basket"></xc:i>
+                <xp:label value="Index 3" styleClass="title"></xp:label>
+              </xc:a>
+            </xc:li>
+          </xc:ul><!-- sub-menu -->
+        </xc:li> <!-- nav-item -->
+        <xc:li extraClasses="nav-item start">
+          <xc:a extraClasses="nav-link nav-toggle" attr1name="href" attr1value="javascript:;">
+            <xc:i extraClasses="icon-docs"></xc:i>
+            <xp:label value="Menu 2" styleClass="title"></xp:label>
+            <xp:label value="" styleClass="arrow"></xp:label>
+          </xc:a>
+          <xc:ul extraClasses="sub-menu">
+            <xc:li extraClasses="nav-item start">
+              <xc:a extraClasses="nav-link" attr1name="href" attr1value="index.xsp">
+                <xc:i extraClasses="icon-diamond"></xc:i>
+                <xp:label value="Index" styleClass="title"></xp:label>
+              </xc:a>
+            </xc:li>
+            <xc:li extraClasses="nav-item start">
+              <xc:a extraClasses="nav-link" attr1name="href" attr1value="index.xsp">
+                <xc:i extraClasses="icon-handbag"></xc:i>
+                <xp:label value="Index 2" styleClass="title"></xp:label>
+              </xc:a>
+            </xc:li>
+            <xc:li extraClasses="nav-item start">
+              <xc:a extraClasses="nav-link" attr1name="href" attr1value="index.xsp">
+                <xc:i extraClasses="icon-basket"></xc:i>
+                <xp:label value="Index 3" styleClass="title"></xp:label>
+              </xc:a>
+            </xc:li>
+          </xc:ul><!-- sub-menu -->
         </xc:li> <!-- nav-item -->
       </xc:ul><!-- page-sidebar-menu -->
     </xp:div><!-- page-sidebar -->

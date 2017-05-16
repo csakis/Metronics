@@ -1,18 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.8" replicaid="8725811F001149F6" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="1ee" sequence="21" unid="8C3B5D80D471CED7872580780018E0C0">
-<created><datetime>20161126T213144,00-07</datetime></created>
-<modified><datetime dst="true">20170512T210851,58-06</datetime></modified>
-<revised><datetime>20161208T132912,97-07</datetime></revised>
-<lastaccessed><datetime dst="true">20170512T210851,57-06</datetime></lastaccessed>
-<addedtofile><datetime dst="true">20170512T210851,57-06</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=admin admin/O=lanl</name></updatedby>
-<wassignedby><name>CN=admin admin/O=lanl</name></wassignedby>
-<item name="$TITLE" sign="true"><text>vuePanel.css</text></item>
-<item name="$MimeCharSet"><text>UTF-8</text></item>
-<item name="$FileModDT" sign="true"><datetime>20161208T132858,15-07</datetime></item>
-<item name="$Flags"><text>=34QC</text></item>
-<item name="$FlagsExt" sign="true"><text>D</text></item>
-<item name="$DesignerVersion"><text>8.5.3</text></item>
-
-
-<item name="$FileNames" sign="true"><text>vuePanel.css</text></item></note>
+<?xml version="1.0" encoding="UTF-8"?><stylesheetresource charset="UTF-8" designerversion="8.5.3" maintenanceversion="1.8" name="vuePanel.css" publicaccess="false" replicaid="87258121004CDB0E" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="5d72" sequence="4" unid="55CB7B4463902A7087258121004D4829">
+<created><datetime dst="true">20170515T080407,45-06</datetime></created>
+<modified><datetime dst="true">20170515T084514,41-06</datetime></modified>
+<revised><datetime dst="true">20170515T084514,40-06</datetime></revised>
+<lastaccessed><datetime dst="true">20170515T084514,40-06</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20170515T080407,45-06</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=admin admin/O=lanl</name></updatedby></stylesheetresource>

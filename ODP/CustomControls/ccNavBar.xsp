@@ -13,6 +13,11 @@
           <xp:label value=""></xp:label>
         </xp:div><!-- menu-toggler -->
       </xp:div><!-- page-logo -->
+      
+      
+      <xc:a extraClasses="menu-toggler responsive-toggler" attr1name="data-toggle" attr1value="collapse" attr2name="data-target" attr2value=".navbar-collapse">
+<xp:label value=""></xp:label>
+      </xc:a>
 
       <xp:div styleClass="top-menu">
         <xc:ul extraClasses="nav navbar-nav pull-right">

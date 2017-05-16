@@ -1,6 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<imageresource xmlns="http://www.lotus.com/dxl" name="wire.PNG" publicaccess="false">
-  <jpeg>
+<?xml version="1.0" encoding="UTF-8"?><imageresource designerversion="8.5.3" maintenanceversion="1.8" name="wire.PNG" publicaccess="false" replicaid="87258121004CDB0E" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="5d7a" sequence="4" unid="C91412019E0996AE87258121004D4843">
+<created><datetime dst="true">20170515T080407,71-06</datetime></created>
+<modified><datetime dst="true">20170515T084514,51-06</datetime></modified>
+<revised><datetime dst="true">20170515T084514,50-06</datetime></revised>
+<lastaccessed><datetime dst="true">20170515T084514,50-06</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20170515T080407,71-06</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=admin admin/O=lanl</name></updatedby>
+<wassignedby><name>CN=admin admin/O=lanl</name></wassignedby><jpeg>
 iVBORw0KGgoAAAANSUhEUgAABEgAAAKECAYAAAAUgQ8jAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAP+lSURBVHhe7P1PjNvWvi96fmufwVVGreDgoGjg
 AYe7B2crIyvYA9OjYgYXYdAPr7gPcGIaF7hhGrjX8qC7aOACkQf9Wnh9ATMjs7oHUfUkzJmYzjsH
@@ -1420,7 +1426,4 @@ AAAAe48ACQAAAAAA2HsESAAAAAAAwN4jQAIAAAAAAPYeARIAAAAAALD3CJAAAAAAAIC9R4AEAAAA
 AADsPQIkAAAAAABg7xEgAQAAAAAAe48ACQAAAAAA2HsESAAAAAAAwN4jQAIAAAAAAPYeARIAAAAA
 ALDnpP8Parid9DzNebwAAAAASUVORK5CYII=
 </jpeg>
-  <item name="$MimeType" sign="true">
-    <text>image/png</text>
-  </item>
 </imageresource>

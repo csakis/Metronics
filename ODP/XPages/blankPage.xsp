@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
-	xmlns:xc="http://www.ibm.com/xsp/custom"
-	styleClass="page-header-fixed page-sidebar-closed-hide-logo page-content-white page-md"
-	createForm="false">
-	<xp:scriptBlock id="onPageLoad"
-		value="loadDefaultStylesIntoHead(); //in clientutils.js">
-	</xp:scriptBlock>
-	<xp:this.resources>
-	  <xp:script src="/clientutils.js" clientSide="true"></xp:script>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom" styleClass="page-header-fixed page-sidebar-closed-hide-logo page-content-white page-md" createForm="false">
+  <xp:scriptBlock id="onPageLoad" value="loadDefaultStylesIntoHead(); //in clientutils.js">
+  </xp:scriptBlock>
+  <xp:this.resources>
+    <xp:script src="/clientutils.js" clientSide="true"></xp:script>
 
-	</xp:this.resources>
-	<xp:div styleClass="page-wrapper">
-		<xc:ccNavBar></xc:ccNavBar>
-		<xp:div styleClass="clearfix"></xp:div>
-		<xp:div styleClass="page-container">
-		  <xc:ccSideBar></xc:ccSideBar>
-		</xp:div> <!-- page-container -->
+  </xp:this.resources>
+  <xp:div styleClass="page-wrapper">
+    <xc:ccNavBar></xc:ccNavBar>
+    <xp:div styleClass="clearfix"></xp:div>
+    <xp:div styleClass="page-container">
+      <xc:ccSideBar></xc:ccSideBar>
+      <xp:div styleClass="page-content-wrapper">
+        <xp:div styleClass="page-content">
 
-	</xp:div>
-	<!-- page-wrapper -->
-	<xc:CSJS></xc:CSJS>
+        </xp:div> <!--  page-content -->
+      </xp:div> <!-- page-content-wrapper -->
+    </xp:div> <!-- page-container -->
+  </xp:div>	<!-- page-wrapper -->
+  <xc:CSJS></xc:CSJS>
 </xp:view>

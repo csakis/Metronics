@@ -1,15 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<note xmlns="http://www.lotus.com/dxl" class="filter">
-  <item name="$TITLE" sign="true">
-    <text>clientutils</text>
-  </item>
-  <item name="$Flags">
-    <text>h534Q</text>
-  </item>
-  <item name="$PublicAccess" sign="true">
-    <text>1</text>
-  </item>
-  <item name="$Comment">
-    <text>util functions for client-side JS</text>
-  </item>
+<?xml version="1.0" encoding="UTF-8"?><note class="filter" maintenanceversion="1.8" replicaid="87258121004CDB0E" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="5e12" sequence="4" unid="7D7A7CDAE36863378725812100502D1B">
+<created><datetime dst="true">20170515T083544,27-06</datetime></created>
+<modified><datetime dst="true">20170515T084510,95-06</datetime></modified>
+<revised><datetime dst="true">20170515T084510,94-06</datetime></revised>
+<lastaccessed><datetime dst="true">20170515T084510,94-06</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20170515T083544,27-06</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=admin admin/O=lanl</name></updatedby>
+<wassignedby><name>CN=admin admin/O=lanl</name></wassignedby>
+<item name="$TITLE" sign="true"><text>clientutils</text></item>
+<item name="$Flags"><text>h534Q</text></item>
+<item name="$PublicAccess" sign="true"><text>1</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
 </note>
