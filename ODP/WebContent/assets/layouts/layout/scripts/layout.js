@@ -3,9 +3,9 @@ Core script to handle the entire theme and core functions
 **/
 var Layout = function () {
 
-    var layoutImgPath = 'layouts/layout/img/';  
+    var layoutImgPath = '../../../assets/layouts/layout/img/';  
 
-    var layoutCssPath = 'layouts/layout/css/';
+    var layoutCssPath = '../../../assets/layouts/layout/css/';
 
     var resBreakpointMd = App.getResponsiveBreakpoint('md');
 

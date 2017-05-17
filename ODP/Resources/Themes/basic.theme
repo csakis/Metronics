@@ -17,7 +17,7 @@
     <!-- <styleSheet href="assets/global/css/components-md.min.css" id="style_components"/> -->
     <styleSheet href="/assets/global/css/plugins-md.min.css" />
     <!-- themes style sheets -->
-    <styleSheet href="assets/layouts/layout/css/layout.min.css" />
+    <styleSheet href="assets/layouts/layout/css/layout.css" />
     <link href="assets/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />
     <!-- <styleSheet href="assets/layouts/layout/css/themes/darkblue.min.css"  id="style_color"/> 
 		<styleSheet href="assets/layouts/layout/css/custom.min.css" /> -->

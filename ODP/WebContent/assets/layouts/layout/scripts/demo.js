@@ -184,22 +184,22 @@ var Demo = function() {
         // handle theme colors
         var setColor = function(color) {
             var color_ = (App.isRTL() ? color + '-rtl' : color);
-            $('#style_color').attr("href", Layout.getLayoutCssPath() + 'themes/' + color_ + ".min.css");
+            $('#style_color').attr("href", 'assets/layouts/layout/css/themes/' + color_ + ".min.css");
             if (color == 'light2') {
-                $('.page-logo img').attr('src', Layout.getLayoutImgPath() + 'logo-invert.png');
+                $('.page-logo img').attr('src', 'assets/layouts/layout/img/' + 'logo-invert.png');
             } else {
-                $('.page-logo img').attr('src', Layout.getLayoutImgPath() + 'logo.png');
+                $('.page-logo img').attr('src', 'assets/layouts/layout/img/' + 'logo.png');
             }
         };
 
         $('.toggler', panel).click(function() {
-            $('.toggler').hide();
+           // $('.toggler').hide();
             $('.toggler-close').show();
             $('.theme-panel > .theme-options').show();
         });
 
         $('.toggler-close', panel).click(function() {
-            $('.toggler').show();
+           // $('.toggler').show();
             $('.toggler-close').hide();
             $('.theme-panel > .theme-options').hide();
         });

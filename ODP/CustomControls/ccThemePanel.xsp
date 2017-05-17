@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
   <xp:div styleClass="theme-panel hidden-xs hidden-sm">
-    <xp:div styleClass="toggler"></xp:div>
-    <xp:div styleClass="toggler-close"></xp:div>
+  <xp:div styleClass="toggler"></xp:div>
+  <xp:div styleClass="toggler-close"></xp:div>
     <xp:div styleClass="theme-options">
       <xp:div styleClass="theme-option theme-colors clearfix">
         <xp:span>THEME COLOR</xp:span>

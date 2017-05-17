@@ -8,12 +8,14 @@
   </xp:this.resources>
   <xp:div styleClass="page-wrapper">
     <xc:ccNavBar></xc:ccNavBar>
+    
     <xp:div styleClass="clearfix"></xp:div>
     <xp:div styleClass="page-container">
+    <xc:ccThemePanel></xc:ccThemePanel>
       <xc:ccSideBar></xc:ccSideBar>
       <xp:div styleClass="page-content-wrapper">
         <xp:div styleClass="page-content">
-
+  
         </xp:div> <!--  page-content -->
       </xp:div> <!-- page-content-wrapper -->
     </xp:div> <!-- page-container -->

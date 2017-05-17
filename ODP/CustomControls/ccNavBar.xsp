@@ -13,10 +13,10 @@
           <xp:label value=""></xp:label>
         </xp:div><!-- menu-toggler -->
       </xp:div><!-- page-logo -->
-      
-      
+
+
       <xc:a extraClasses="menu-toggler responsive-toggler" attr1name="data-toggle" attr1value="collapse" attr2name="data-target" attr2value=".navbar-collapse">
-<xp:label value=""></xp:label>
+        <xp:label value=""></xp:label>
       </xc:a>
 
       <xp:div styleClass="top-menu">
@@ -24,8 +24,7 @@
           <!-- BEGIN NOTIFICATION DROPDOWN -->
           <!-- DOC: Apply "dropdown-dark" class after "dropdown-extended" to change the dropdown styte -->
           <!--
-            DOC: Apply "dropdown-hoverable" class after below "dropdown" and remove data-toggle="dropdown" data-hover="dropdown" data-close-others="true" attributes to enable hover
-            dropdown mode
+            DOC: Apply "dropdown-hoverable" class after below "dropdown" and remove data-toggle="dropdown" data-hover="dropdown" data-close-others="true" attributes to enable hover dropdown mode
           -->
           <!-- DOC: Remove "dropdown-hoverable" and add data-toggle="dropdown" data-hover="dropdown" data-close-others="true" attributes to the below A element with dropdown-toggle class -->
           <xc:li extraClasses="dropdown dropdown-extended dropdown-notification" attr1name="id" attr1value="header_notification_bar">
@@ -72,21 +71,12 @@
           </xc:li><!-- TODO end -->
 
           <!-- user dropdown begin  -->
-          <xc:li extraClasses="dropdown dropdown-user">
-            <xp:link escape="true" text="" styleClass="dropdown-toggle">
-              <xp:this.attrs>
-                <xp:attr name="data-toggle" value="dropdown"></xp:attr>
-                <xp:attr name="data-hover" value="dropdown"></xp:attr>
-                <xp:attr name="data-close-others" value="true"></xp:attr>
-              </xp:this.attrs>
-              <xp:label value="#{javascript:middle(@UserName(), '=', '/')}" styleClass="username username-hide-on-mobile"></xp:label>
-              <xc:i extraClasses="fa fa-angle-down"></xc:i>
-            </xp:link>
-            <xc:ul extraClasses="dropdown-menu dropdown-menu-default">
-              <xc:li> <xc:ccThemePanel></xc:ccThemePanel></xc:li>
-            </xc:ul><!-- dropdown end -->
+          <xc:li extraClasses="navbar-text">
+            <xp:label value="#{javascript:middle(@UserName(), '=', '/')}" styleClass="username username-hide-on-mobile" style="color:white"></xp:label>
           </xc:li><!-- user dropdown end -->
-        </xc:ul><!-- nav navbar -->
+         
+      
+          </xc:ul><!-- nav navbar -->
       </xp:div><!-- top-menu -->
     </xp:div><!--page-header-inner -->
   </xp:div>
