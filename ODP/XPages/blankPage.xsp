@@ -20,6 +20,7 @@
          <xc:ccPageBar></xc:ccPageBar>
   
         </xp:div> <!--  page-content -->
+        <xc:ccFooter></xc:ccFooter>
       </xp:div> <!-- page-content-wrapper -->
     </xp:div> <!-- page-container -->
   </xp:div>	<!-- page-wrapper -->

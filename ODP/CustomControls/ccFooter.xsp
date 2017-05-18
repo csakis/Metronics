@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+  <xp:div styleClass="page-footer">
+    <xp:div styleClass="page-footer-inner">
+      2017 &#169; Metronic Theme By Csaba Kiss
+  </xp:div>
+  </xp:div>
+</xp:view>
