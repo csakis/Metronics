@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
   <xp:div styleClass="theme-panel hidden-xs hidden-sm">
-  <xp:div styleClass="toggler"></xp:div>
-  <xp:div styleClass="toggler-close"></xp:div>
+    <xp:div styleClass="toggler"></xp:div>
+    <xp:div styleClass="toggler-close"></xp:div>
     <xp:div styleClass="theme-options">
       <xp:div styleClass="theme-option theme-colors clearfix">
         <xp:span>THEME COLOR</xp:span>
@@ -22,71 +22,57 @@
           </xc:li>
         </xc:ul>
       </xp:div><!-- theme option -->
+      <div class="theme-option">
+        <span> Header </span>
+        <select class="page-header-option form-control input-sm">
+          <option value="fixed" selected="selected">Fixed</option>
+          <option value="default">Default</option>
+        </select>
+      </div>
+      <div class="theme-option">
+        <span> Top Menu Dropdown</span>
+        <select class="page-header-top-dropdown-style-option form-control input-sm">
+          <option value="light">Light</option>
+          <option value="dark" selected="selected">Dark</option>
+        </select>
+      </div>
+      <div class="theme-option">
+        <span> Sidebar Mode</span>
+        <select class="sidebar-option form-control input-sm">
+          <option value="fixed">Fixed</option>
+          <option value="default" selected="selected">Default</option>
+        </select>
+      </div>
+      <div class="theme-option">
+        <span> Sidebar Menu </span>
+        <select class="sidebar-menu-option form-control input-sm">
+          <option value="accordion" selected="selected">Accordion</option>
+          <option value="hover">Hover</option>
+        </select>
+      </div>
+      <div class="theme-option">
+        <span> Sidebar Style </span>
+        <select class="sidebar-style-option form-control input-sm">
+          <option value="default" selected="selected">Default</option>
+          <option value="light">Light</option>
+        </select>
+      </div>
+      <div class="theme-option">
+        <span> Sidebar Position </span>
+        <select class="sidebar-pos-option form-control input-sm">
+          <option value="left" selected="selected">Left</option>
+          <option value="right">Right</option>
+        </select>
+      </div>
+      <div class="theme-option">
+        <span> Footer </span>
+        <select class="page-footer-option form-control input-sm">
+          <option value="fixed">Fixed</option>
+          <option value="default" selected="selected">Default</option>
+        </select>
+      </div>
 
-      <xp:div styleClass="theme-option">
-        <xp:span>Layout</xp:span>
-        <xp:comboBox styleClass="layout-option input-sm" defaultValue="fluid">
-          <xp:selectItem itemLabel="Fluid" itemValue="fluid">
-          </xp:selectItem>
-          <xp:selectItem itemLabel="Boxed" itemValue="boxed"></xp:selectItem>
-        </xp:comboBox>
-      </xp:div><!-- theme option -->
 
-      <xp:div styleClass="theme-option">
-        <xp:span>Header</xp:span>
-        <xp:comboBox styleClass="layout-option input-sm" defaultValue="fixed">
-          <xp:selectItem itemLabel="Fixed" itemValue="fixed"></xp:selectItem>
-          <xp:selectItem itemLabel="default" itemValue="default"></xp:selectItem>
-        </xp:comboBox>
-      </xp:div><!-- theme option -->
-
-      <xp:div styleClass="theme-option">
-        <xp:span>Top Menu Dropdown </xp:span>
-        <xp:comboBox styleClass="layout-option input-sm" defaultValue="dark">
-          <xp:selectItem itemLabel="Light" itemValue="light"></xp:selectItem>
-          <xp:selectItem itemLabel="Dark" itemValue="dark"></xp:selectItem>
-        </xp:comboBox>
-      </xp:div><!-- theme option -->
-
-      <xp:div styleClass="theme-option">
-        <xp:span>Sidebar Mode</xp:span>
-        <xp:comboBox styleClass="layout-option input-sm" defaultValue="fixed">
-          <xp:selectItem itemLabel="Fixed" itemValue="fixed"></xp:selectItem>
-          <xp:selectItem itemLabel="Default" itemValue="default"></xp:selectItem>
-        </xp:comboBox>
-      </xp:div><!-- theme option -->
-
-      <xp:div styleClass="theme-option">
-        <xp:span>Sidebar Menu</xp:span>
-        <xp:comboBox styleClass="layout-option input-sm" defaultValue="accordion">
-          <xp:selectItem itemLabel="Accordion" itemValue="accordion"></xp:selectItem>
-          <xp:selectItem itemLabel="Hover" itemValue="hover"></xp:selectItem>
-        </xp:comboBox>
-      </xp:div><!-- theme option -->
-      
-      <xp:div styleClass="theme-option">
-        <xp:span>Sidebar Style</xp:span>
-        <xp:comboBox styleClass="layout-option input-sm" defaultValue="accordion">
-          <xp:selectItem itemLabel="Accordion" itemValue="accordion"></xp:selectItem>
-          <xp:selectItem itemLabel="Hover" itemValue="hover"></xp:selectItem>
-        </xp:comboBox>
-      </xp:div><!-- theme option -->
-      
-      <xp:div styleClass="theme-option">
-        <xp:span>Sidebar Position</xp:span>
-        <xp:comboBox styleClass="layout-option input-sm" defaultValue="left">
-          <xp:selectItem itemLabel="Left" itemValue="left"></xp:selectItem>
-          <xp:selectItem itemLabel="Right" itemValue="right"></xp:selectItem>
-        </xp:comboBox>
-      </xp:div><!-- theme option -->
-      
-      <xp:div styleClass="theme-option">
-        <xp:span>Footer</xp:span>
-        <xp:comboBox styleClass="layout-option input-sm" defaultValue="fixed">
-          <xp:selectItem itemLabel="Fixed" itemValue="fixed"></xp:selectItem>
-          <xp:selectItem itemLabel="Default" itemValue="default"></xp:selectItem>
-        </xp:comboBox>
-      </xp:div><!-- theme option -->
 
     </xp:div><!-- theme-options -->
   </xp:div><!-- theme-panel -->

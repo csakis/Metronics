@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
+
+  <!-- this control adds special actions and breadcrumbs to a page  -->
+  <!-- Don't use this custom control, it's just a code template  -->
+  <xp:div styleClass="page-bar">
+    <xc:ul extraClasses="page-breadcrumb">
+      <xc:li>
+        <xp:link escape="true" text="Home" value="/index.xsp"></xp:link>
+        <xc:ccBsIcon iconFixedWidth="false" iconSpinning="false" iconName="circle"></xc:ccBsIcon>
+      </xc:li>
+      <xc:li>
+        <xp:link escape="true" text="Blank Page" value="/blankPage.xsp"></xp:link>
+      </xc:li>
+    </xc:ul><!-- page breadcrumb -->
+    <xp:div styleClass="page-toolbar">
+      <xp:div styleClass="btn-group pullright">
+        <xp:button value="" styleClass="green btn-sm btn-outline dropdown-toggle">
+          <xp:this.attrs>
+            <xp:attr name="data-toggle" value="dropdown"></xp:attr>
+          </xp:this.attrs>
+          <xp:label value="Actions "></xp:label>
+          <xc:i extraClasses="caret"></xc:i>
+
+        </xp:button>
+        <xc:ul extraClasses="dropdown-menu pull-right" attr1name="role" attr1value="menu">
+          <xc:li>
+            <xp:link escape="true" text="Action 1" id="link1">
+              <xc:i extraClasses="icon-bell"></xc:i>
+            </xp:link>
+          </xc:li>
+        </xc:ul>
+      </xp:div><!-- btn-group pull-right -->
+    </xp:div> <!--  page-toolbar -->
+  </xp:div><!--  page-bar -->
+</xp:view>
