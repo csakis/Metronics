@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom" xmlns:xe="http://www.ibm.com/xsp/coreex">
+  <xp:this.beforePageLoad><![CDATA[#{javascript:var linkData = compositeData.links;}]]></xp:this.beforePageLoad>
+  <xp:div styleClass="page-bar">
+    <xc:ul extraClasses="page-breadcrumb">
+      <xp:repeat id="repeat1" rows="30" var="linkArray" indexVar="linkIndex" value="#{javascript:linkData}" repeatControls="false" disableOutputTag="true">
+        <xc:li>
+          <xp:link escape="true" text="#{linkArray.label}&#160;" value="#{linkArray.link}"></xp:link>
+          <xc:ccBsIcon iconFixedWidth="false" iconSpinning="false" iconName="caret-right">
+            <xc:this.rendered><![CDATA[#{javascript:return (linkIndex<linkData.length-1)}]]></xc:this.rendered>
+          </xc:ccBsIcon>
+
+        </xc:li>
+      </xp:repeat>
+
+    </xc:ul>
+  </xp:div>
+
+</xp:view>

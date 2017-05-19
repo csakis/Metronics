@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
-
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom" xmlns:xe="http://www.ibm.com/xsp/coreex" id="pageBarId">
   <!-- this control adds special actions and breadcrumbs to a page  -->
   <!-- Don't use this custom control, it's just a code template  -->
+  <xp:this.beforePageLoad><![CDATA[#{javascript:var pageBarData = compositeData.links;}]]></xp:this.beforePageLoad>
   <xp:div styleClass="page-bar">
     <xc:ul extraClasses="page-breadcrumb">
-      <xc:li>
-        <xp:link escape="true" text="Home" value="/index.xsp"></xp:link>
-        <xc:ccBsIcon iconFixedWidth="false" iconSpinning="false" iconName="circle"></xc:ccBsIcon>
-      </xc:li>
-      <xc:li>
-        <xp:link escape="true" text="Blank Page" value="/blankPage.xsp"></xp:link>
-      </xc:li>
+      <xp:repeat id="repeat1" rows="30" var="linkArray" disableOutputTag="true" indexVar="linkIndex">
+        <xp:this.value><![CDATA[#{javascript:return pageBarData;
+}]]></xp:this.value>
+        <xc:li>
+          <xp:link escape="true" text="#{linkArray.label}&#160;" value="#{linkArray.link}"></xp:link>
+          <xc:ccBsIcon iconFixedWidth="false" iconSpinning="false" iconName="caret-right">
+            <xc:this.rendered><![CDATA[#{javascript:return (linkIndex < pageBarData.length-1);
+// don't render the icon at the last link }]]></xc:this.rendered>
+          </xc:ccBsIcon>       
+        </xc:li>
+      </xp:repeat>
     </xc:ul><!-- page breadcrumb -->
     <xp:div styleClass="page-toolbar">
       <xp:div styleClass="btn-group pullright">
@@ -21,7 +25,6 @@
           </xp:this.attrs>
           <xp:label value="Actions "></xp:label>
           <xc:i extraClasses="caret"></xc:i>
-
         </xp:button>
         <xc:ul extraClasses="dropdown-menu pull-right" attr1name="role" attr1value="menu">
           <xc:li>
@@ -31,6 +34,6 @@
           </xc:li>
         </xc:ul>
       </xp:div><!-- btn-group pull-right -->
-    </xp:div> <!--  page-toolbar -->
+    </xp:div><!--  page-toolbar -->
   </xp:div><!--  page-bar -->
 </xp:view>

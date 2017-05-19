@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
+
+  <xp:div styleClass="page-container">
+    <xp:div styleClass="page-content-wrapper">
+      <xp:div styleClass="page-content">
+        <xc:ccPageBar2>
+          <xc:this.links><![CDATA[#{javascript:return [
+	{"label": "Home Page",
+	"link": "/index.xsp"
+	},	
+	{"label": "Blank Page",
+	"link": "/blankPage.xsp"
+	},	
+	{"label": "Page 2",
+	"link": "/page2.xsp"
+	}	
+];}]]></xc:this.links>
+        </xc:ccPageBar2>
+      </xp:div>
+    </xp:div>
+  </xp:div>
+</xp:view>
